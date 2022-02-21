@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "name": "Ronaldo",
+      "company": "ad",
+      "status": "Active",
+      "notes": "Best",
+      "id": 3
+    },
+    {
+      "name": "Messi",
+      "company": "Liverpool",
+      "status": "Active",
+      "notes": "best2",
+      "id": 4
+    },
+    {
+      "name": "Harshit",
+      "company": "sdsad",
+      "status": "Closed",
+      "notes": "adad",
+      "id": 5
+    },
+    {
+      "name": "Riyan Giggs",
+      "company": "Barcelona",
+      "status": "Active",
+      "notes": "dsf",
+      "id": 6
+    }
+  ]
+}

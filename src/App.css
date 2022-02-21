@@ -1,38 +1,149 @@
-.App {
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container{
+  padding : 5px
+}
+
+table {
+  font-family: arial, sans-serif;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+td, th {
   text-align: center;
+  padding: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+tr:nth-child(even) {
+  background-color: #dddddd;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.multipleSelection {
+ width: 300px;
+ background-color: #BCC2C1;
+ position: relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ .selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+ font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkBoxes {
+ display: none;
+ border: 1px #8DF5E4 solid;
+ position: absolute;
+ background-color: #fff;
+ z-index: 1;
+}
+
+#checkBoxes label {
+   display: block;
+}
+
+#checkBoxes label:hover {
+  background-color: #4F615E;
+}
+
+.filter-div{
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+
+
+.add-button{
+  margin-left: 10px;
+}
+
+button {
+  background-color: rgb(117, 10, 160);
+  border-radius: 15px;
+  color : #fff;
+  padding : 15px;
+  border : none;
+  cursor: pointer;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  z-index: 2;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-body{
+  width: 100%;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modal-content {
+  background-color: #fff;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
+.modal-header,
+.modal-footer {
+  padding: 10px;
+}
+
+.modal-title {
+  margin: 0;
+}
+
+
+.form-group input{
+  width: 100%;
+  padding: 5px;
+}
+
+.button-div{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-div button{
+  margin-top : 10px;
+  margin-bottom : 10px;
+  margin-right : 5px
+}
+
+select{
+  padding: 5px;
+}
+
+
